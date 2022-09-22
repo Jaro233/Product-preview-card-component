@@ -5,10 +5,15 @@
     box-sizing: border-box;
 }
   
-body {
+html, body {
     background-color: hsl(30, 38%, 92%);
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 p {
@@ -21,23 +26,22 @@ s {
 }
 
 img {
-    max-width: 300px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    max-width: 18.75rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
 }
 
 .card {
     display: flex;
-    margin: 200px auto;
-    /* position: fixed; */
-    max-width: 600px;
-    max-height: 450px;
+    margin: 1.25rem;
+    max-width: 37.5rem;
+    max-height: 28.125rem;
     background: #fff;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 .right {
-    padding: 20px 25px;
+    padding: 1.25rem 1.5625rem;
 }
 
 
@@ -45,7 +49,6 @@ img {
 .price {
     display: flex;
     flex-direction: row;
-    /* flex-wrap: nowrap; */
     justify-content: flex-start;
     align-items: center;
     align-content: center;
@@ -72,17 +75,21 @@ button {
     background-color: hsl(158, 36%, 37%);
     color: white;
     cursor: pointer;
-    border-radius: 9px;
+    border-radius: 0.5625rem;
     border: none;
     width: 100%;
 }
 
 svg {
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 button:hover {
 	background-color: hsl(160, 21%, 14%)
+}
+
+footer {
+    margin-bottom: 1.25rem;
 }
 
 @media only screen and (max-width: 600px){
@@ -92,12 +99,15 @@ button:hover {
         flex-direction: column;
         max-width: 100%;
         max-height: 100%;
-        margin: 12px;
+    }
+
+    footer {
+        display: none;
     }
 
     img {
         max-width: 100%;
-        border-radius: 8px;
+        border-radius: 0.5rem;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
     }
@@ -106,13 +116,13 @@ button:hover {
 @media only screen and (min-width: 600px) {
 
     .right p {
-        padding-right: 10px;
+        padding-right: 0.625rem;
     }
     .right h1 {
-        padding-right: 10px;
+        padding-right: 0.625rem;
     }
     
     button {
-        margin: 10px auto;
+        margin: 0.625rem auto;
     }
 }
